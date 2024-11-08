@@ -4,29 +4,59 @@ A data analysis project examining the relationships between homelessness rates, 
 
 > **Note**: This project is actively under development. Current findings are preliminary as additional features and data points are being incorporated into the analysis.
 
-## Machine Learning Results
+## Key Categorical Findings
 
-### Random Forest Model Performance
-- R² Score: 0.7053
-- Most accurate for states with rates between 100-300 per 100,000
-- Less precise for extreme cases
+### Political Categories
 
-### Feature Importance
-1. Political_Index: ~0.45 importance
-2. Temperature: ~0.29 importance
-3. CoCs_per_hundredthousands: ~0.26 importance
+**Conservative States**
+- Mean homelessness rate: 107.89 per 100,000
+- Standard deviation: 40.43
+- Range: 21.22 to 314.59
+- Most consistent rates across all categories
 
-## Key Correlations
+**Liberal States**
+- Mean homelessness rate: 194.34 per 100,000
+- Standard deviation: 110.38
+- Range: 62.71 to 507.94
+- Highest variability in rates
 
-### Political & Homelessness (0.418)
-- Moderate positive correlation
-- Higher Democratic leaning correlates with higher reported rates
-- Example: California (Index: 86.61, Rate: 330.87)
+### Temperature Categories
 
-### Temperature & Homelessness (-0.215)
-- Weak negative correlation
-- Counterintuitive finding: Colder states show slightly higher rates
-- Example: Alabama (62.7°F) vs. Vermont (44.9°F)
+**Cold States**
+- Mean homelessness rate: 180.35 per 100,000
+- Standard deviation: 102.43
+- Range: 67.31 to 507.94
+- Higher rates across political categories
+
+**Warm States**
+- Mean homelessness rate: 124.92 per 100,000
+- Less variable than cold states
+- Range: 21.22 to 439.34
+
+### CoC Coverage Analysis
+
+**Medium Coverage Areas**
+- Mean homelessness rate: 157.82 per 100,000
+- Standard deviation: 101.16
+- Range: 21.22 to 473.39
+- Shows highest variability
+
+## Key Interactions
+
+### Political-Temperature
+- Liberal states maintain higher rates regardless of temperature
+- Cold + Liberal combination shows highest rates
+- Conservative states maintain lower rates across temperatures
+
+### Political-CoC
+- CoC coverage is not a strong predictor of rates
+- Liberal states show higher rates regardless of CoC coverage
+- Medium CoC coverage shows most variability
+
+### Temperature-CoC
+- Cold states show higher rates across all CoC levels
+- Warm states show more consistent rates
+- CoC coverage effect is less significant than temperature
 
 ## Data Overview
 
