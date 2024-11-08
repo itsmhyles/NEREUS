@@ -1,29 +1,29 @@
-I'll help you create a more comprehensive README that incorporates the new Random Forest analysis and additional datasets.
-
-```markdown
 # NEREUS: Political & Climate Correlations with Homelessness
 
 A data analysis project examining the relationships between homelessness rates, climate conditions, and political landscapes across US states (2010-2022).
 
 > **Note**: This project is actively under development. Current findings are preliminary as additional features and data points are being incorporated into the analysis.
 
-## Model Performance & Key Findings
+## Machine Learning Results
 
-### Machine Learning Results
-- Random Forest: R² = 0.7053 (Best performing)
-- XGBoost: R² = 0.6672
-- Gradient Boosting: R² = 0.6528
+### Random Forest Model Performance
+- R² Score: 0.7053
+- Most accurate for states with rates between 100-300 per 100,000
+- Less precise for extreme cases
 
-These models explain approximately 70% of variance in homelessness rates using our predictors.
+### Feature Importance
+1. Political_Index: ~0.45 importance
+2. Temperature: ~0.29 importance
+3. CoCs_per_hundredthousands: ~0.26 importance
 
-### Statistical Correlations
+## Key Correlations
 
-**Political & Homelessness (0.418)**
+### Political & Homelessness (0.418)
 - Moderate positive correlation
 - Higher Democratic leaning correlates with higher reported rates
 - Example: California (Index: 86.61, Rate: 330.87)
 
-**Temperature & Homelessness (-0.215)**
+### Temperature & Homelessness (-0.215)
 - Weak negative correlation
 - Counterintuitive finding: Colder states show slightly higher rates
 - Example: Alabama (62.7°F) vs. Vermont (44.9°F)
@@ -33,16 +33,14 @@ These models explain approximately 70% of variance in homelessness rates using o
 ### Coverage
 624 observations across 48 states (2010-2022)
 
-### Variables
+### Sample Data Point
 ```python
-Sample data point:
 State: AL
 Year: 2010
 Homeless_Rate: 126.34
 Temperature: 62.7°F
 Political_Index: 12.6346
 CoCs_per_hundredthousands: 0.167174
-```
 
 ### Distribution Statistics
 ```python
