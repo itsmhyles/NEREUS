@@ -1,0 +1,43 @@
+Primary Datasets Required
+- Homelessness Data
+Climate Data
+- Average temperatures by state/city
+Political Data
+- State political leaning 
+- State government control history
+- Policy implementations related to homelessness
+
+Proposed Analysis Methods
+1. Regression Models
+Multiple linear regression with dependent variable: homelessness rate
+Independent variables:
+Average temperature
+Temperature variation
+Political control
+Housing costs
+Population density
+2. Comparative Analysis
+Create state clusters based on:
+Climate zones
+Political leaning
+Homelessness rates
+Compare:
+Red vs. Blue states with similar climates
+Similar political leaning with different climates
+
+Key Considerations
+Methodological Challenges
+Confounding Variables
+Housing costs
+Cost of living
+Local policies
+Economic indicators
+Social services availability
+Data Quality Issues
+Point-in-Time count limitations
+Varying definitions of homelessness
+Inconsistent reporting methods
+Research Questions to Address
+Is there a stronger correlation between climate and homelessness than political affiliation?
+How does the sheltered/unsheltered ratio vary by climate zone?
+Do states with similar climates have similar homelessness patterns regardless of political control?

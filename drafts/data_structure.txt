@@ -1,0 +1,31 @@
+PS C:\Users\mhyles\Downloads\2024 Projects\homelessness> python -u "c:\Users\mhyles\Downloads\2024 Projects\homelessness\drafts\data_check.py"
+Homeless Data Structure:
+  State    2010    2011    2012    2013    2014    2015    2016    2017    2018    2019    2020    2021    2022
+0    AK  260.96  294.68  261.90  264.02  242.30  265.22  261.65  249.43  274.23  260.68  265.91  265.20  316.39
+1    AL  126.34  115.81  108.17   97.08   94.20   81.82   84.53   77.81   70.26   66.51   66.60   50.61   73.95
+2    AR   94.53  116.44  142.74  128.81   98.94   85.96   82.38   82.20   90.11   90.03   78.49   70.63   80.72
+3    AZ  213.99  162.28  172.42  159.24  155.93  144.90  139.85  127.02  137.82  137.48  152.77   75.08  184.00
+4    CA  330.87  332.45  316.47  309.85  295.24  297.39  301.64  334.19  329.36  382.86  408.95  146.81  439.34
+
+Columns: ['State', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022']
+
+Climate Data Structure:
+   ID        Name  Value  Anomaly (1901-2000 base period)  Rank  1901-2000 Mean  Year
+0   1     Alabama   62.7                             -0.4    38            63.1  2010
+1   2     Arizona   60.4                              1.0    96            59.4  2010
+2   3    Arkansas   61.2                              0.8    96            60.4  2010
+3   4  California   57.7                              0.3    77            57.4  2010
+4   5    Colorado   46.2                              1.5   110            44.6  2010
+
+Columns: ['ID', 'Name', 'Value', 'Anomaly (1901-2000 base period)', 'Rank', '1901-2000 Mean', 'Year']
+
+Political Data Structure:
+   Year       State  Political_Index
+0  2010     ALABAMA          12.6346
+1  2010      ALASKA           9.7350
+2  2010     ARIZONA          18.9225
+3  2010    ARKANSAS          49.9575
+4  2010  CALIFORNIA          48.4002
+
+Columns: ['Year', 'State', 'Political_Index']
+PS C:\Users\mhyles\Downloads\2024 Projects\homelessness> 

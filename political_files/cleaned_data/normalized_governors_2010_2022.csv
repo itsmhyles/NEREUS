@@ -1,0 +1,651 @@
+year,state,governor,party
+2010,Alabama,Bob Riley,Republican
+2011,Alabama,Robert Bentley,Republican
+2012,Alabama,Robert Bentley,Republican
+2013,Alabama,Robert Bentley,Republican
+2014,Alabama,Robert Bentley,Republican
+2015,Alabama,Robert Bentley,Republican
+2016,Alabama,Robert Bentley,Republican
+2017,Alabama,Robert Bentley,Republican
+2018,Alabama,Kay Ivey,Republican
+2019,Alabama,Kay Ivey,Republican
+2020,Alabama,Kay Ivey,Republican
+2021,Alabama,Kay Ivey,Republican
+2022,Alabama,Kay Ivey,Republican
+2010,Alaska,Sean Parnell,Republican
+2011,Alaska,Sean Parnell,Republican
+2012,Alaska,Sean Parnell,Republican
+2013,Alaska,Sean Parnell,Republican
+2014,Alaska,Bill Walker,Independent
+2015,Alaska,Bill Walker,Independent
+2016,Alaska,Bill Walker,Independent
+2017,Alaska,Bill Walker,Independent
+2018,Alaska,Bill Walker,Independent
+2019,Alaska,Mike Dunleavy,Republican
+2020,Alaska,Mike Dunleavy,Republican
+2021,Alaska,Mike Dunleavy,Republican
+2022,Alaska,Mike Dunleavy,Republican
+2010,Arizona,Jan Brewer,Republican
+2011,Arizona,Jan Brewer,Republican
+2012,Arizona,Jan Brewer,Republican
+2013,Arizona,Jan Brewer,Republican
+2014,Arizona,Jan Brewer,Republican
+2015,Arizona,Jan Brewer,Republican
+2016,Arizona,Doug Ducey,Republican
+2017,Arizona,Doug Ducey,Republican
+2018,Arizona,Doug Ducey,Republican
+2019,Arizona,Doug Ducey,Republican
+2020,Arizona,Doug Ducey,Republican
+2021,Arizona,Doug Ducey,Republican
+2022,Arizona,Doug Ducey,Republican
+2010,Arkansas,Mike Beebe,Democrat
+2011,Arkansas,Mike Beebe,Democrat
+2012,Arkansas,Mike Beebe,Democrat
+2013,Arkansas,Mike Beebe,Democrat
+2014,Arkansas,Mike Beebe,Democrat
+2015,Arkansas,Mike Beebe,Democrat
+2016,Arkansas,Asa Hutchinson,Republican
+2017,Arkansas,Asa Hutchinson,Republican
+2018,Arkansas,Asa Hutchinson,Republican
+2019,Arkansas,Asa Hutchinson,Republican
+2020,Arkansas,Asa Hutchinson,Republican
+2021,Arkansas,Asa Hutchinson,Republican
+2022,Arkansas,Asa Hutchinson,Republican
+2010,California,Arnold Schwarzenegger,Republican
+2011,California,Edmund G. Brown Jr.,Democrat
+2012,California,Edmund G. Brown Jr.,Democrat
+2013,California,Edmund G. Brown Jr.,Democrat
+2014,California,Edmund G. Brown Jr.,Democrat
+2015,California,Edmund G. Brown Jr.,Democrat
+2016,California,Edmund G. Brown Jr.,Democrat
+2017,California,Edmund G. Brown Jr.,Democrat
+2018,California,Edmund G. Brown Jr.,Democrat
+2019,California,Edmund G. Brown Jr.,Democrat
+2020,California,Gavin Newsom,Democrat
+2021,California,Gavin Newsom,Democrat
+2022,California,Gavin Newsom,Democrat
+2010,Colorado,Bill Ritter,Democrat
+2011,Colorado,John Hickenlooper,Democrat
+2012,Colorado,John Hickenlooper,Democrat
+2013,Colorado,John Hickenlooper,Democrat
+2014,Colorado,John Hickenlooper,Democrat
+2015,Colorado,John Hickenlooper,Democrat
+2016,Colorado,John Hickenlooper,Democrat
+2017,Colorado,John Hickenlooper,Democrat
+2018,Colorado,John Hickenlooper,Democrat
+2019,Colorado,John Hickenlooper,Democrat
+2020,Colorado,Jared Polis,Democrat
+2021,Colorado,Jared Polis,Democrat
+2022,Colorado,Jared Polis,Democrat
+2010,Connecticut,M. Jodi Rell,Republican
+2011,Connecticut,Dannel Malloy,Democrat
+2012,Connecticut,Dannel Malloy,Democrat
+2013,Connecticut,Dannel Malloy,Democrat
+2014,Connecticut,Dannel Malloy,Democrat
+2015,Connecticut,Dannel Malloy,Democrat
+2016,Connecticut,Dannel Malloy,Democrat
+2017,Connecticut,Dannel Malloy,Democrat
+2018,Connecticut,Dannel Malloy,Democrat
+2019,Connecticut,Dannel Malloy,Democrat
+2020,Connecticut,Ned Lamont,Democrat
+2021,Connecticut,Ned Lamont,Democrat
+2022,Connecticut,Ned Lamont,Democrat
+2010,Delaware,Jack Markell,Democrat
+2011,Delaware,Jack Markell,Democrat
+2012,Delaware,Jack Markell,Democrat
+2013,Delaware,Jack Markell,Democrat
+2014,Delaware,Jack Markell,Democrat
+2015,Delaware,Jack Markell,Democrat
+2016,Delaware,Jack Markell,Democrat
+2017,Delaware,Jack Markell,Democrat
+2018,Delaware,John Carney,Democrat
+2019,Delaware,John Carney,Democrat
+2020,Delaware,John Carney,Democrat
+2021,Delaware,John Carney,Democrat
+2022,Delaware,John Carney,Democrat
+2010,Florida,Charlie Crist,Republican
+2011,Florida,Rick Scott,Republican
+2012,Florida,Rick Scott,Republican
+2013,Florida,Rick Scott,Republican
+2014,Florida,Rick Scott,Republican
+2015,Florida,Rick Scott,Republican
+2016,Florida,Rick Scott,Republican
+2017,Florida,Rick Scott,Republican
+2018,Florida,Rick Scott,Republican
+2019,Florida,Rick Scott,Republican
+2020,Florida,Ron DeSantis,Republican
+2021,Florida,Ron DeSantis,Republican
+2022,Florida,Ron DeSantis,Republican
+2010,Georgia,Sonny Perdue,Republican
+2011,Georgia,Nathan Deal,Republican
+2012,Georgia,Nathan Deal,Republican
+2013,Georgia,Nathan Deal,Republican
+2014,Georgia,Nathan Deal,Republican
+2015,Georgia,Nathan Deal,Republican
+2016,Georgia,Nathan Deal,Republican
+2017,Georgia,Nathan Deal,Republican
+2018,Georgia,Nathan Deal,Republican
+2019,Georgia,Nathan Deal,Republican
+2020,Georgia,Brian Kemp,Republican
+2021,Georgia,Brian Kemp,Republican
+2022,Georgia,Brian Kemp,Republican
+2010,Hawaii,Neil Abercrombie,Democrat
+2011,Hawaii,Neil Abercrombie,Democrat
+2012,Hawaii,Neil Abercrombie,Democrat
+2013,Hawaii,Neil Abercrombie,Democrat
+2014,Hawaii,Neil Abercrombie,Democrat
+2015,Hawaii,David Ige,Democrat
+2016,Hawaii,David Ige,Democrat
+2017,Hawaii,David Ige,Democrat
+2018,Hawaii,David Ige,Democrat
+2019,Hawaii,David Ige,Democrat
+2020,Hawaii,David Ige,Democrat
+2021,Hawaii,David Ige,Democrat
+2022,Hawaii,David Ige,Democrat
+2010,Idaho,C.L. “Butch” Otter,Republican
+2011,Idaho,C.L. “Butch” Otter,Republican
+2012,Idaho,C.L. “Butch” Otter,Republican
+2013,Idaho,C.L. “Butch” Otter,Republican
+2014,Idaho,C.L. “Butch” Otter,Republican
+2015,Idaho,C.L. “Butch” Otter,Republican
+2016,Idaho,C.L. “Butch” Otter,Republican
+2017,Idaho,C.L. “Butch” Otter,Republican
+2018,Idaho,C.L. “Butch” Otter,Republican
+2019,Idaho,C.L. “Butch” Otter,Republican
+2020,Idaho,Brad Little,Republican
+2021,Idaho,Brad Little,Republican
+2022,Idaho,Brad Little,Republican
+2010,Illinois,Pat Quinn,Democrat
+2011,Illinois,Pat Quinn,Democrat
+2012,Illinois,Pat Quinn,Democrat
+2013,Illinois,Pat Quinn,Democrat
+2014,Illinois,Pat Quinn,Democrat
+2015,Illinois,Bruce Rauner,Republican
+2016,Illinois,Bruce Rauner,Republican
+2017,Illinois,Bruce Rauner,Republican
+2018,Illinois,Bruce Rauner,Republican
+2019,Illinois,Bruce Rauner,Republican
+2020,Illinois,J.B. Pritzker,Democrat
+2021,Illinois,J.B. Pritzker,Democrat
+2022,Illinois,J.B. Pritzker,Democrat
+2010,Indiana,Mitch Daniels,Republican
+2011,Indiana,Mitch Daniels,Republican
+2012,Indiana,Mitch Daniels,Republican
+2013,Indiana,Mike Pence,Republican
+2014,Indiana,Mike Pence,Republican
+2015,Indiana,Mike Pence,Republican
+2016,Indiana,Mike Pence,Republican
+2017,Indiana,Mike Pence,Republican
+2018,Indiana,Eric Holcomb,Republican
+2019,Indiana,Eric Holcomb,Republican
+2020,Indiana,Eric Holcomb,Republican
+2021,Indiana,Eric Holcomb,Republican
+2022,Indiana,Eric Holcomb,Republican
+2010,Iowa,Chet Culver,Democrat
+2011,Iowa,Terry E. Branstad,Republican
+2012,Iowa,Terry E. Branstad,Republican
+2013,Iowa,Terry E. Branstad,Republican
+2014,Iowa,Terry E. Branstad,Republican
+2015,Iowa,Terry E. Branstad,Republican
+2016,Iowa,Terry E. Branstad,Republican
+2017,Iowa,Terry E. Branstad,Republican
+2018,Iowa,Kim Reynolds,Republican
+2019,Iowa,Kim Reynolds,Republican
+2020,Iowa,Kim Reynolds,Republican
+2021,Iowa,Kim Reynolds,Republican
+2022,Iowa,Kim Reynolds,Republican
+2010,Kansas,Mark Parkinson,Democrat
+2011,Kansas,Sam Brownback,Republican
+2012,Kansas,Sam Brownback,Republican
+2013,Kansas,Sam Brownback,Republican
+2014,Kansas,Sam Brownback,Republican
+2015,Kansas,Sam Brownback,Republican
+2016,Kansas,Sam Brownback,Republican
+2017,Kansas,Sam Brownback,Republican
+2018,Kansas,Jeff Colyer,Republican
+2019,Kansas,Jeff Colyer,Republican
+2020,Kansas,Laura Kelly,Democrat
+2021,Kansas,Laura Kelly,Democrat
+2022,Kansas,Laura Kelly,Democrat
+2010,Kentucky,Steven L. Beshear,Democrat
+2011,Kentucky,Steven L. Beshear,Democrat
+2012,Kentucky,Steven L. Beshear,Democrat
+2013,Kentucky,Steven L. Beshear,Democrat
+2014,Kentucky,Steven L. Beshear,Democrat
+2015,Kentucky,Matt Bevin,Republican
+2016,Kentucky,Matt Bevin,Republican
+2017,Kentucky,Matt Bevin,Republican
+2018,Kentucky,Matt Bevin,Republican
+2019,Kentucky,Matt Bevin,Republican
+2020,Kentucky,Andy Beshear,Democrat
+2021,Kentucky,Andy Beshear,Democrat
+2022,Kentucky,Andy Beshear,Democrat
+2010,Louisiana,Bobby Jindal,Republican
+2011,Louisiana,Bobby Jindal,Republican
+2012,Louisiana,Bobby Jindal,Republican
+2013,Louisiana,Bobby Jindal,Republican
+2014,Louisiana,Bobby Jindal,Republican
+2015,Louisiana,Bobby Jindal,Republican
+2016,Louisiana,Bobby Jindal,Republican
+2017,Louisiana,John Bel Edwards,Democrat
+2018,Louisiana,John Bel Edwards,Democrat
+2019,Louisiana,John Bel Edwards,Democrat
+2020,Louisiana,John Bel Edwards,Democrat
+2021,Louisiana,John Bel Edwards,Democrat
+2022,Louisiana,John Bel Edwards,Democrat
+2010,Maine,John E. Baldacci,Democrat
+2011,Maine,Paul LePage,Republican
+2012,Maine,Paul LePage,Republican
+2013,Maine,Paul LePage,Republican
+2014,Maine,Paul LePage,Republican
+2015,Maine,Paul LePage,Republican
+2016,Maine,Paul LePage,Republican
+2017,Maine,Paul LePage,Republican
+2018,Maine,Paul LePage,Republican
+2019,Maine,Paul LePage,Republican
+2020,Maine,Janet Mills,Democrat
+2021,Maine,Janet Mills,Democrat
+2022,Maine,Janet Mills,Democrat
+2010,Maryland,Martin O’Malley,Democrat
+2011,Maryland,Martin O’Malley,Democrat
+2012,Maryland,Martin O’Malley,Democrat
+2013,Maryland,Martin O’Malley,Democrat
+2014,Maryland,Martin O’Malley,Democrat
+2015,Maryland,Martin O’Malley,Democrat
+2016,Maryland,Larry Hogan,Republican
+2017,Maryland,Larry Hogan,Republican
+2018,Maryland,Larry Hogan,Republican
+2019,Maryland,Larry Hogan,Republican
+2020,Maryland,Larry Hogan,Republican
+2021,Maryland,Larry Hogan,Republican
+2022,Maryland,Larry Hogan,Republican
+2010,Massachusetts,Deval Patrick,Democrat
+2011,Massachusetts,Deval Patrick,Democrat
+2012,Massachusetts,Deval Patrick,Democrat
+2013,Massachusetts,Deval Patrick,Democrat
+2014,Massachusetts,Deval Patrick,Democrat
+2015,Massachusetts,Deval Patrick,Democrat
+2016,Massachusetts,Charlie Baker,Republican
+2017,Massachusetts,Charlie Baker,Republican
+2018,Massachusetts,Charlie Baker,Republican
+2019,Massachusetts,Charlie Baker,Republican
+2020,Massachusetts,Charlie Baker,Republican
+2021,Massachusetts,Charlie Baker,Republican
+2022,Massachusetts,Charlie Baker,Republican
+2010,Michigan,Jennifer M. Granholm,Democrat
+2011,Michigan,Rick Snyder,Republican
+2012,Michigan,Rick Snyder,Republican
+2013,Michigan,Rick Snyder,Republican
+2014,Michigan,Rick Snyder,Republican
+2015,Michigan,Rick Snyder,Republican
+2016,Michigan,Rick Snyder,Republican
+2017,Michigan,Rick Snyder,Republican
+2018,Michigan,Rick Snyder,Republican
+2019,Michigan,Rick Snyder,Republican
+2020,Michigan,Gretchen Whitmer,Democrat
+2021,Michigan,Gretchen Whitmer,Democrat
+2022,Michigan,Gretchen Whitmer,Democrat
+2010,Minnesota,Tim Pawlenty,Republican
+2011,Minnesota,Mark Dayton,Democrat
+2012,Minnesota,Mark Dayton,Democrat
+2013,Minnesota,Mark Dayton,Democrat
+2014,Minnesota,Mark Dayton,Democrat
+2015,Minnesota,Mark Dayton,Democrat
+2016,Minnesota,Mark Dayton,Democrat
+2017,Minnesota,Mark Dayton,Democrat
+2018,Minnesota,Mark Dayton,Democrat
+2019,Minnesota,Mark Dayton,Democrat
+2020,Minnesota,Tim Walz,Democrat
+2021,Minnesota,Tim Walz,Democrat
+2022,Minnesota,Tim Walz,Democrat
+2010,Mississippi,Haley Barbour,Republican
+2011,Mississippi,Haley Barbour,Republican
+2012,Mississippi,Phil Bryant,Republican
+2013,Mississippi,Phil Bryant,Republican
+2014,Mississippi,Phil Bryant,Republican
+2015,Mississippi,Phil Bryant,Republican
+2016,Mississippi,Phil Bryant,Republican
+2017,Mississippi,Phil Bryant,Republican
+2018,Mississippi,Phil Bryant,Republican
+2019,Mississippi,Phil Bryant,Republican
+2020,Mississippi,Phil Bryant,Republican
+2021,Mississippi,Tate Reeves,Republican
+2022,Mississippi,Tate Reeves,Republican
+2010,Missouri,Jeremiah W. (Jay) Nixon,Democrat
+2011,Missouri,Jeremiah W. (Jay) Nixon,Democrat
+2012,Missouri,Jeremiah W. (Jay) Nixon,Democrat
+2013,Missouri,Jeremiah W. (Jay) Nixon,Democrat
+2014,Missouri,Jeremiah W. (Jay) Nixon,Democrat
+2015,Missouri,Jeremiah W. (Jay) Nixon,Democrat
+2016,Missouri,Jeremiah W. (Jay) Nixon,Democrat
+2017,Missouri,Eric Greitens,Republican
+2018,Missouri,Eric Greitens,Republican
+2019,Missouri,Mike Parson,Republican
+2020,Missouri,Mike Parson,Republican
+2021,Missouri,Mike Parson,Republican
+2022,Missouri,Mike Parson,Republican
+2010,Montana,Brian Schweitzer,Democrat
+2011,Montana,Brian Schweitzer,Democrat
+2012,Montana,Brian Schweitzer,Democrat
+2013,Montana,Brian Schweitzer,Democrat
+2014,Montana,Steve Bullock,Democrat
+2015,Montana,Steve Bullock,Democrat
+2016,Montana,Steve Bullock,Democrat
+2017,Montana,Steve Bullock,Democrat
+2018,Montana,Steve Bullock,Democrat
+2019,Montana,Steve Bullock,Democrat
+2020,Montana,Steve Bullock,Democrat
+2021,Montana,Greg Gianforte,Republican
+2022,Montana,Greg Gianforte,Republican
+2010,Nebraska,Dave Heineman,Republican
+2011,Nebraska,Dave Heineman,Republican
+2012,Nebraska,Dave Heineman,Republican
+2013,Nebraska,Dave Heineman,Republican
+2014,Nebraska,Dave Heineman,Republican
+2015,Nebraska,Dave Heineman,Republican
+2016,Nebraska,Pete Ricketts,Republican
+2017,Nebraska,Pete Ricketts,Republican
+2018,Nebraska,Pete Ricketts,Republican
+2019,Nebraska,Pete Ricketts,Republican
+2020,Nebraska,Pete Ricketts,Republican
+2021,Nebraska,Pete Ricketts,Republican
+2022,Nebraska,Pete Ricketts,Republican
+2010,Nevada,Jim Gibbons,Republican
+2011,Nevada,Brian Sandoval,Republican
+2012,Nevada,Brian Sandoval,Republican
+2013,Nevada,Brian Sandoval,Republican
+2014,Nevada,Brian Sandoval,Republican
+2015,Nevada,Brian Sandoval,Republican
+2016,Nevada,Brian Sandoval,Republican
+2017,Nevada,Brian Sandoval,Republican
+2018,Nevada,Brian Sandoval,Republican
+2019,Nevada,Brian Sandoval,Republican
+2020,Nevada,Steve Sisolak,Democrat
+2021,Nevada,Steve Sisolak,Democrat
+2022,Nevada,Steve Sisolak,Democrat
+2010,New Hampshire,John Lynch,Democrat
+2011,New Hampshire,John Lynch,Democrat
+2012,New Hampshire,John Lynch,Democrat
+2013,New Hampshire,Maggie Hassan,Democrat
+2014,New Hampshire,Maggie Hassan,Democrat
+2015,New Hampshire,Maggie Hassan,Democrat
+2016,New Hampshire,Maggie Hassan,Democrat
+2017,New Hampshire,Chuck Morse,Republican
+2018,New Hampshire,Chris Sununu,Republican
+2019,New Hampshire,Chris Sununu,Republican
+2020,New Hampshire,Chris Sununu,Republican
+2021,New Hampshire,Chris Sununu,Republican
+2022,New Hampshire,Chris Sununu,Republican
+2010,New Jersey,Christopher Christie,Republican
+2011,New Jersey,Christopher Christie,Republican
+2012,New Jersey,Christopher Christie,Republican
+2013,New Jersey,Christopher Christie,Republican
+2014,New Jersey,Christopher Christie,Republican
+2015,New Jersey,Christopher Christie,Republican
+2016,New Jersey,Christopher Christie,Republican
+2017,New Jersey,Christopher Christie,Republican
+2018,New Jersey,Christopher Christie,Republican
+2019,New Jersey,Phil Murphy,Democrat
+2020,New Jersey,Phil Murphy,Democrat
+2021,New Jersey,Phil Murphy,Democrat
+2022,New Jersey,Phil Murphy,Democrat
+2010,New Mexico,Bill Richardson,Democrat
+2011,New Mexico,Susana Martinez,Republican
+2012,New Mexico,Susana Martinez,Republican
+2013,New Mexico,Susana Martinez,Republican
+2014,New Mexico,Susana Martinez,Republican
+2015,New Mexico,Susana Martinez,Republican
+2016,New Mexico,Susana Martinez,Republican
+2017,New Mexico,Susana Martinez,Republican
+2018,New Mexico,Susana Martinez,Republican
+2019,New Mexico,Susana Martinez,Republican
+2020,New Mexico,Michelle Lujan Grisham,Democrat
+2021,New Mexico,Michelle Lujan Grisham,Democrat
+2022,New Mexico,Michelle Lujan Grisham,Democrat
+2010,New York,David A. Paterson,Democrat
+2011,New York,David A. Paterson,Democrat
+2012,New York,Andrew Cuomo,Democrat
+2013,New York,Andrew Cuomo,Democrat
+2014,New York,Andrew Cuomo,Democrat
+2015,New York,Andrew Cuomo,Democrat
+2016,New York,Andrew Cuomo,Democrat
+2017,New York,Andrew Cuomo,Democrat
+2018,New York,Andrew Cuomo,Democrat
+2019,New York,Andrew Cuomo,Democrat
+2020,New York,Andrew Cuomo,Democrat
+2021,New York,Andrew Cuomo,Democrat
+2022,New York,Kathy Hochul,Democrat
+2010,North Carolina,Bev Perdue,Democrat
+2011,North Carolina,Bev Perdue,Democrat
+2012,North Carolina,Bev Perdue,Democrat
+2013,North Carolina,Pat McCrory,Republican
+2014,North Carolina,Pat McCrory,Republican
+2015,North Carolina,Pat McCrory,Republican
+2016,North Carolina,Pat McCrory,Republican
+2017,North Carolina,Roy Cooper,Democrat
+2018,North Carolina,Roy Cooper,Democrat
+2019,North Carolina,Roy Cooper,Democrat
+2020,North Carolina,Roy Cooper,Democrat
+2021,North Carolina,Roy Cooper,Democrat
+2022,North Carolina,Roy Cooper,Democrat
+2010,North Dakota,Jack Dalrymple,Republican
+2011,North Dakota,Jack Dalrymple,Republican
+2012,North Dakota,Jack Dalrymple,Republican
+2013,North Dakota,Jack Dalrymple,Republican
+2014,North Dakota,Jack Dalrymple,Republican
+2015,North Dakota,Jack Dalrymple,Republican
+2016,North Dakota,Jack Dalrymple,Republican
+2017,North Dakota,Doug Burgum,Republican
+2018,North Dakota,Doug Burgum,Republican
+2019,North Dakota,Doug Burgum,Republican
+2020,North Dakota,Doug Burgum,Republican
+2021,North Dakota,Doug Burgum,Republican
+2022,North Dakota,Doug Burgum,Republican
+2010,Ohio,Ted Strickland,Democrat
+2011,Ohio,John Kasich,Republican
+2012,Ohio,John Kasich,Republican
+2013,Ohio,John Kasich,Republican
+2014,Ohio,John Kasich,Republican
+2015,Ohio,John Kasich,Republican
+2016,Ohio,John Kasich,Republican
+2017,Ohio,John Kasich,Republican
+2018,Ohio,John Kasich,Republican
+2019,Ohio,John Kasich,Republican
+2020,Ohio,Mike DeWine,Republican
+2021,Ohio,Mike DeWine,Republican
+2022,Ohio,Mike DeWine,Republican
+2010,Oklahoma,Brad Henry,Democrat
+2011,Oklahoma,Mary Fallin,Republican
+2012,Oklahoma,Mary Fallin,Republican
+2013,Oklahoma,Mary Fallin,Republican
+2014,Oklahoma,Mary Fallin,Republican
+2015,Oklahoma,Mary Fallin,Republican
+2016,Oklahoma,Mary Fallin,Republican
+2017,Oklahoma,Mary Fallin,Republican
+2018,Oklahoma,Mary Fallin,Republican
+2019,Oklahoma,Mary Fallin,Republican
+2020,Oklahoma,Kevin Stitt,Republican
+2021,Oklahoma,Kevin Stitt,Republican
+2022,Oklahoma,Kevin Stitt,Republican
+2010,Oregon,Ted Kulongoski,Democrat
+2011,Oregon,John A. Kitzhaber,Democrat
+2012,Oregon,John A. Kitzhaber,Democrat
+2013,Oregon,John A. Kitzhaber,Democrat
+2014,Oregon,John A. Kitzhaber,Democrat
+2015,Oregon,John A. Kitzhaber,Democrat
+2016,Oregon,Kate Brown,Democrat
+2017,Oregon,Kate Brown,Democrat
+2018,Oregon,Kate Brown,Democrat
+2019,Oregon,Kate Brown,Democrat
+2020,Oregon,Kate Brown,Democrat
+2021,Oregon,Kate Brown,Democrat
+2022,Oregon,Kate Brown,Democrat
+2010,Pennsylvania,Edward G. Rendell,Democrat
+2011,Pennsylvania,Tom Corbett,Republican
+2012,Pennsylvania,Tom Corbett,Republican
+2013,Pennsylvania,Tom Corbett,Republican
+2014,Pennsylvania,Tom Corbett,Republican
+2015,Pennsylvania,Tom Corbett,Republican
+2016,Pennsylvania,Tom Wolf,Democrat
+2017,Pennsylvania,Tom Wolf,Democrat
+2018,Pennsylvania,Tom Wolf,Democrat
+2019,Pennsylvania,Tom Wolf,Democrat
+2020,Pennsylvania,Tom Wolf,Democrat
+2021,Pennsylvania,Tom Wolf,Democrat
+2022,Pennsylvania,Tom Wolf,Democrat
+2010,Rhode Island,Don Carcieri,Republican
+2011,Rhode Island,Lincoln Chafee,Democrat
+2012,Rhode Island,Lincoln Chafee,Democrat
+2013,Rhode Island,Lincoln Chafee,Democrat
+2014,Rhode Island,Lincoln Chafee,Democrat
+2015,Rhode Island,Lincoln Chafee,Democrat
+2016,Rhode Island,Gina Raimondo,Democrat
+2017,Rhode Island,Gina Raimondo,Democrat
+2018,Rhode Island,Gina Raimondo,Democrat
+2019,Rhode Island,Gina Raimondo,Democrat
+2020,Rhode Island,Gina Raimondo,Democrat
+2021,Rhode Island,Gina Raimondo,Democrat
+2022,Rhode Island,Gina Raimondo,Democrat
+2010,South Carolina,Mark Sanford,Republican
+2011,South Carolina,Nikki R. Haley,Republican
+2012,South Carolina,Nikki R. Haley,Republican
+2013,South Carolina,Nikki R. Haley,Republican
+2014,South Carolina,Nikki R. Haley,Republican
+2015,South Carolina,Nikki R. Haley,Republican
+2016,South Carolina,Nikki R. Haley,Republican
+2017,South Carolina,Nikki R. Haley,Republican
+2018,South Carolina,Henry McMaster,Republican
+2019,South Carolina,Henry McMaster,Republican
+2020,South Carolina,Henry McMaster,Republican
+2021,South Carolina,Henry McMaster,Republican
+2022,South Carolina,Henry McMaster,Republican
+2010,South Dakota,Mike Rounds,Republican
+2011,South Dakota,Dennis Daugaard,Republican
+2012,South Dakota,Dennis Daugaard,Republican
+2013,South Dakota,Dennis Daugaard,Republican
+2014,South Dakota,Dennis Daugaard,Republican
+2015,South Dakota,Dennis Daugaard,Republican
+2016,South Dakota,Dennis Daugaard,Republican
+2017,South Dakota,Dennis Daugaard,Republican
+2018,South Dakota,Dennis Daugaard,Republican
+2019,South Dakota,Dennis Daugaard,Republican
+2020,South Dakota,Kristi Noem,Republican
+2021,South Dakota,Kristi Noem,Republican
+2022,South Dakota,Kristi Noem,Republican
+2010,Tennessee,Phil Bredesen,Democrat
+2011,Tennessee,Bill Haslam,Republican
+2012,Tennessee,Bill Haslam,Republican
+2013,Tennessee,Bill Haslam,Republican
+2014,Tennessee,Bill Haslam,Republican
+2015,Tennessee,Bill Haslam,Republican
+2016,Tennessee,Bill Haslam,Republican
+2017,Tennessee,Bill Haslam,Republican
+2018,Tennessee,Bill Haslam,Republican
+2019,Tennessee,Bill Haslam,Republican
+2020,Tennessee,Bill Lee,Republican
+2021,Tennessee,Bill Lee,Republican
+2022,Tennessee,Bill Lee,Republican
+2010,Texas,Rick Perry,Republican
+2011,Texas,Rick Perry,Republican
+2012,Texas,Rick Perry,Republican
+2013,Texas,Rick Perry,Republican
+2014,Texas,Rick Perry,Republican
+2015,Texas,Rick Perry,Republican
+2016,Texas,Greg Abbott,Republican
+2017,Texas,Greg Abbott,Republican
+2018,Texas,Greg Abbott,Republican
+2019,Texas,Greg Abbott,Republican
+2020,Texas,Greg Abbott,Republican
+2021,Texas,Greg Abbott,Republican
+2022,Texas,Greg Abbott,Republican
+2010,Utah,Gary Herbert,Republican
+2011,Utah,Gary Herbert,Republican
+2012,Utah,Gary Herbert,Republican
+2013,Utah,Gary Herbert,Republican
+2014,Utah,Gary Herbert,Republican
+2015,Utah,Gary Herbert,Republican
+2016,Utah,Gary Herbert,Republican
+2017,Utah,Gary Herbert,Republican
+2018,Utah,Gary Herbert,Republican
+2019,Utah,Gary Herbert,Republican
+2020,Utah,Gary Herbert,Republican
+2021,Utah,Spencer Cox,Republican
+2022,Utah,Spencer Cox,Republican
+2010,Vermont,Jim Douglas,Republican
+2011,Vermont,Peter Shumlin,Democrat
+2012,Vermont,Peter Shumlin,Democrat
+2013,Vermont,Peter Shumlin,Democrat
+2014,Vermont,Peter Shumlin,Democrat
+2015,Vermont,Peter Shumlin,Democrat
+2016,Vermont,Peter Shumlin,Democrat
+2017,Vermont,Peter Shumlin,Democrat
+2018,Vermont,Phil Scott,Republican
+2019,Vermont,Phil Scott,Republican
+2020,Vermont,Phil Scott,Republican
+2021,Vermont,Phil Scott,Republican
+2022,Vermont,Phil Scott,Republican
+2010,Virginia,Robert McDonnell,Republican
+2011,Virginia,Robert McDonnell,Republican
+2012,Virginia,Robert McDonnell,Republican
+2013,Virginia,Robert McDonnell,Republican
+2014,Virginia,Terry McAuliffe,Democrat
+2015,Virginia,Terry McAuliffe,Democrat
+2016,Virginia,Terry McAuliffe,Democrat
+2017,Virginia,Terry McAuliffe,Democrat
+2018,Virginia,Terry McAuliffe,Democrat
+2019,Virginia,Ralph Northam,Democrat
+2020,Virginia,Ralph Northam,Democrat
+2021,Virginia,Ralph Northam,Democrat
+2022,Virginia,Glenn Youngkin,Republican
+2010,Washington,Chris Gregoire,Democrat
+2011,Washington,Chris Gregoire,Democrat
+2012,Washington,Chris Gregoire,Democrat
+2013,Washington,Chris Gregoire,Democrat
+2014,Washington,Jay Inslee,Democrat
+2015,Washington,Jay Inslee,Democrat
+2016,Washington,Jay Inslee,Democrat
+2017,Washington,Jay Inslee,Democrat
+2018,Washington,Jay Inslee,Democrat
+2019,Washington,Jay Inslee,Democrat
+2020,Washington,Jay Inslee,Democrat
+2021,Washington,Jay Inslee,Democrat
+2022,Washington,Jay Inslee,Democrat
+2010,West Virginia,Joe Manchin III,Democrat
+2011,West Virginia,Earl Ray Tomblin,Democrat
+2012,West Virginia,Earl Ray Tomblin,Democrat
+2013,West Virginia,Earl Ray Tomblin,Democrat
+2014,West Virginia,Earl Ray Tomblin,Democrat
+2015,West Virginia,Earl Ray Tomblin,Democrat
+2016,West Virginia,Earl Ray Tomblin,Democrat
+2017,West Virginia,Earl Ray Tomblin,Democrat
+2018,West Virginia,Jim Justice,Republican
+2019,West Virginia,Jim Justice,Republican
+2020,West Virginia,Jim Justice,Republican
+2021,West Virginia,Jim Justice,Republican
+2022,West Virginia,Jim Justice,Republican
+2010,Wisconsin,Jim Doyle,Democrat
+2011,Wisconsin,Scott Walker,Republican
+2012,Wisconsin,Scott Walker,Republican
+2013,Wisconsin,Scott Walker,Republican
+2014,Wisconsin,Scott Walker,Republican
+2015,Wisconsin,Scott Walker,Republican
+2016,Wisconsin,Scott Walker,Republican
+2017,Wisconsin,Scott Walker,Republican
+2018,Wisconsin,Scott Walker,Republican
+2019,Wisconsin,Scott Walker,Republican
+2020,Wisconsin,Tony Evers,Democrat
+2021,Wisconsin,Tony Evers,Democrat
+2022,Wisconsin,Tony Evers,Democrat
+2010,Wyoming,Dave Freudenthal,Democrat
+2011,Wyoming,Matthew Mead,Republican
+2012,Wyoming,Matthew Mead,Republican
+2013,Wyoming,Matthew Mead,Republican
+2014,Wyoming,Matthew Mead,Republican
+2015,Wyoming,Matthew Mead,Republican
+2016,Wyoming,Matthew Mead,Republican
+2017,Wyoming,Matthew Mead,Republican
+2018,Wyoming,Matthew Mead,Republican
+2019,Wyoming,Matthew Mead,Republican
+2020,Wyoming,Mark Gordon,Republican
+2021,Wyoming,Mark Gordon,Republican
+2022,Wyoming,Mark Gordon,Republican

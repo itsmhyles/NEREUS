@@ -1,0 +1,67 @@
+Population per State
+https://www.census.gov/data/tables.html
+
+Homeless per State 
+https://www.huduser.gov/portal/datasets/ahar/2023-ahar-part-1-pit-estimates-of-homelessness-in-the-us.html
+
+Political Index
+
+Citations
+Kaplan, Jacob. United States Governors 1775-2020: united_states_governors_1775_2020.csv. Ann Arbor, MI: Inter-university Consortium for Political and Social Research [distributor], 2021-01-16. https://doi.org/10.3886/E102000V3-82580
+MIT Election Data and Science Lab, 2017, "U.S. President 1976–2020", https://doi.org/10.7910/DVN/42MVDX, Harvard Dataverse, V8, UNF:6:F0opd1IRbeYI9QyVfzglUw== [fileUNF]
+MIT Election Data and Science Lab, 2017, "U.S. House 1976–2022", https://doi.org/10.7910/DVN/IG0UN2, Harvard Dataverse, V13, UNF:6:Ky5FkettbvohjTSN/IVldA== [fileUNF]
+
+
+
+
+State Legislature Control (40% weight)
+- Chamber control: 20 points
+- Margin control: 10 points
+- Length control: 10 points
+- Party in control indicates direction
+
+Executive Control (30% weight)
+Presidential Election Results (30% weight)
+- Points based on margin of victory
+- Higher margin = more points
+- Winner's party indicates direction
+
+Governatorial Control (30% weight)
+- Party alignment: 15 points
+- Margin victory: 10 points
+- Length control: 5 points
+
+
+Example of how the political index works given the scoring components:
+For Michigan's example:
+Democratic points:
+Presidential: 3 points (narrow D win)
+Governor: 23 points (D control)
+Total D: 26 points
+Republican points:
+Legislature: 38 points (R control)
+Total R: 38 points
+Therefore, Michigan's index of 64 with more Republican points indicates a slight Republican lean despite mixed control. 
+The lower total_index (64/100) suggests a competitive/moderate state rather than strong partisan control.
+
+
+The margin calculation:
+Takes the total points earned by each party across all three components:
+Presidential voting (max 30 points)
+Legislature control (max 40 points)
+Governor control (max 30 points)
+Calculates the difference between winning and losing party's points
+Divides by total possible points between both parties
+Multiplies by 100 to get percentage
+
+
+A 15% margin in elections is considered significant because:
+Most competitive elections are decided by single-digit margins
+A 15% margin represents a strong victory in electoral terms
+Very few races see margins above 30% 
+
+See average
+
+
+Challenges:
+Temporal mismatch between political data and homelessness rates
