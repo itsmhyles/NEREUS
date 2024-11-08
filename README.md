@@ -18,7 +18,33 @@ A data analysis project examining the relationships between homelessness rates, 
 - Counterintuitive finding: Colder states show slightly higher homelessness rates
 - Urban concentration in colder states may influence this pattern
 
-[Rest of your README remains the same...]
+## Data Overview
+
+**Coverage**: 624 observations across 48 states (2010-2022)
+
+**Variables**:
+- State
+- Year
+- Homeless_Rate
+- Temperature
+- Political_Index
+
+## Methodology
+
+### Data Sources
+- Population: US Census Bureau
+- Homelessness: HUD User Portal
+- Political Data: Harvard Dataverse
+
+### Analysis Methods
+
+```python
+# Core analysis components
+import pandas as pd
+from linearmodels import PanelOLS
+from statsmodels.tsa.seasonal import seasonal_decompose
+import geopandas as gpd
+from sklearn.cluster import KMeans
 
 ## Future Development Plans
 
@@ -26,7 +52,6 @@ Currently working on incorporating:
 - Housing cost analysis
 - Economic indicators
 - Local policy implementations
-- Mental health services availability
 - Substance abuse program data
 - More granular temperature data
 - Seasonal migration patterns
