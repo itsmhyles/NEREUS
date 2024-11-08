@@ -1,0 +1,64 @@
+## States with Increasing Homelessness
+
+1. **Vermont (VT)**
+- Highest increasing trend: +11.77 per year
+- Political Index: ~57 (Moderate Democratic)
+- High variability (std: 81.01)
+- Dramatic increase from 172.65 to 429.60
+
+2. **New York (NY)**
+- Second highest increase: +7.44 per year
+- Political Index: ~84-88 (Strong Democratic)
+- More stable rates (std: 48.83)
+- Consistently high baseline (325-473)
+
+3. **Delaware (DE)**
+- Third highest increase: +5.46 per year
+- Political Index: ~90 (Strong Democratic)
+- Moderate variability (std: 35.62)
+- More than doubled from 94.58 to 232.38
+
+4. **California (CA)**
+- Moderate increase: +2.29 per year
+- Political Index: ~85-88 (Strong Democratic)
+- High variability (std: 66.74)
+- Wide range (146.81-439.34)
+
+## States with Decreasing Homelessness
+
+1. **Florida (FL)**
+- Steepest decrease: -17.91 per year
+- Political Index: ~17-20 (Strong Republican)
+- High variability (std: 69.59)
+- Significant improvement from 305.38 to 96.75
+
+2. **Georgia (GA)**
+- Second steepest decrease: -12.65 per year
+- Political Index: ~17-31 (Republican)
+- Moderate variability (std: 50.52)
+- Consistent improvement
+
+3. **Nevada (NV)**
+- Third steepest decrease: -11.96 per year
+- Political Index: Variable (40-82)
+- Moderate variability (std: 52.86)
+- Still high baseline rates
+
+## Key Insights
+
+1. **Political Correlation**
+- States with increasing homelessness tend to be Democratic-leaning
+- States with decreasing homelessness tend to be Republican-leaning
+- However, correlation doesn't imply causation
+
+2. **Variability Patterns**
+- Higher baseline rates tend to have higher standard deviations: This means states with higher homelessness rates tend to experience larger fluctuations in their numbers year to year.
+- More volatile in states with larger populations
+- Climate may play a role in variability: States with extreme weather variations show more volatility in homeless rates
+
+3. **Rate Ranges**
+- Mean rates vary widely (58.75 to 446.53)
+- Standard deviations show significant differences in stability
+- Most states fall between 100-155 per 100,000 residents
+
+This analysis suggests complex relationships between political leaning, policy approaches, and homelessness outcomes, warranting deeper investigation of specific policies and local factors.

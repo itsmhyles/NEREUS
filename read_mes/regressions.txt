@@ -1,0 +1,139 @@
+1. **Panel Data Analysis**
+```python
+import pandas as pd
+from linearmodels import PanelOLS
+
+# First, reshape homeless data to long format
+homeless_long = homeless_df.melt(
+    id_vars=['State'], 
+    var_name='Year', 
+    value_name='Homeless_Rate'
+)
+
+# Merge all datasets
+panel_data = pd.merge(homeless_long, climate_df[['Name', 'Year', 'Value']], 
+                     left_on=['State', 'Year'],
+                     right_on=['Name', 'Year'])
+panel_data = pd.merge(panel_data, political_df)
+
+# Set multi-index
+panel_data = panel_data.set_index(['State', 'Year'])
+
+# Run panel regression
+model = PanelOLS(panel_data['Homeless_Rate'], 
+                 panel_data[['Value', 'Political_Index']], 
+                 entity_effects=True)
+```
+This controls for both time and state-specific effects.
+
+2. **Time Series Decomposition**
+```python
+from statsmodels.tsa.seasonal import seasonal_decompose
+
+def analyze_state_trends(state_data):
+    # Decompose into trend, seasonal, and residual components
+    decomposition = seasonal_decompose(state_data, period=12)
+    
+    return {
+        'trend': decomposition.trend,
+        'seasonal': decomposition.seasonal,
+        'residual': decomposition.resid
+    }
+
+# Apply to each state
+for state in homeless_df['State'].unique():
+    state_data = homeless_df[homeless_df['State'] == state]
+    trends = analyze_state_trends(state_data.iloc[:, 1:].values[0])
+```
+This helps identify underlying patterns and cycles.
+
+3. **Geospatial Analysis**
+```python
+import geopandas as gpd
+
+# Load US state shapefile
+us_states = gpd.read_file('us_states.shp')
+
+# Merge with your data
+geo_data = us_states.merge(homeless_df, on='State')
+
+# Create choropleth maps
+fig, ax = plt.subplots(figsize=(15, 10))
+geo_data.plot(column='2022', 
+              cmap='RdYlBu',
+              legend=True,
+              ax=ax)
+```
+This visualizes spatial patterns and regional clusters.
+
+4. **Clustering Analysis**
+```python
+from sklearn.cluster import KMeans
+from sklearn.preprocessing import StandardScaler
+
+# Prepare features
+features = ['Homeless_Rate', 'Temperature', 'Political_Index']
+X = merged_df[features]
+
+# Standardize
+scaler = StandardScaler()
+X_scaled = scaler.fit_transform(X)
+
+# Perform clustering
+kmeans = KMeans(n_clusters=4, random_state=42)
+merged_df['Cluster'] = kmeans.fit_predict(X_scaled)
+
+# Analyze clusters
+cluster_stats = merged_df.groupby('Cluster')[features].mean()
+```
+This identifies groups of states with similar characteristics.
+
+5. **Fixed Effects Model**
+```python
+import statsmodels.api as sm
+
+# Create dummy variables for states
+state_dummies = pd.get_dummies(merged_df['State'], prefix='state')
+merged_df = pd.concat([merged_df, state_dummies], axis=1)
+
+# Run regression with fixed effects
+X = merged_df[['Temperature', 'Political_Index'] + state_dummies.columns.tolist()]
+y = merged_df['Homeless_Rate']
+
+model = sm.OLS(y, sm.add_constant(X)).fit()
+```
+This controls for unobserved state-specific characteristics.
+
+Recommended Comprehensive Analysis:
+```python
+def comprehensive_analysis(homeless_df, climate_df, political_df):
+    # 1. Panel Data Analysis
+    panel_results = run_panel_analysis(homeless_df, climate_df, political_df)
+    
+    # 2. Time Series Analysis
+    time_trends = analyze_time_trends(homeless_df)
+    
+    # 3. Spatial Analysis
+    spatial_patterns = analyze_spatial_patterns(homeless_df)
+    
+    # 4. Clustering
+    clusters = perform_clustering(homeless_df, climate_df, political_df)
+    
+    # 5. Fixed Effects
+    fe_results = run_fixed_effects(homeless_df, climate_df, political_df)
+    
+    return {
+        'panel': panel_results,
+        'time_series': time_trends,
+        'spatial': spatial_patterns,
+        'clusters': clusters,
+        'fixed_effects': fe_results
+    }
+```
+
+This comprehensive approach helps:
+1. Control for state-specific factors
+2. Identify temporal patterns
+3. Understand regional variations
+4. Group similar states together
+5. Account for both observed and unobserved variables

@@ -1,4 +1,4 @@
-PS C:\Users\mhyles\Downloads\2024 Projects\homelessness> python -u "c:\Users\mhyles\Downloads\2024 Projects\homelessness\drafts\data_check.py"
+PS C:\Users\mhyles\Downloads\2024 Projects\NEREUS> python -u "c:\Users\mhyles\Downloads\2024 Projects\NEREUS\drafts\data_check.py"
 Homeless Data Structure:
   State    2010    2011    2012    2013    2014    2015    2016    2017    2018    2019    2020    2021    2022
 0    AK  260.96  294.68  261.90  264.02  242.30  265.22  261.65  249.43  274.23  260.68  265.91  265.20  316.39
@@ -28,4 +28,4 @@ Political Data Structure:
 4  2010  CALIFORNIA          48.4002
 
 Columns: ['Year', 'State', 'Political_Index']
-PS C:\Users\mhyles\Downloads\2024 Projects\homelessness> 
+PS C:\Users\mhyles\Downloads\2024 Projects\NEREUS> 

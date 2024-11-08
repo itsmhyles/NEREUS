@@ -1,165 +1,159 @@
 import pandas as pd
 import numpy as np
 from statsmodels.tsa.seasonal import seasonal_decompose
-from statsmodels.tsa.stattools import adfuller
 import matplotlib.pyplot as plt
 import seaborn as sns
-from scipy import stats
 
 # File paths
-homeless_file = r"C:\Users\mhyles\Downloads\2024 Projects\homelessness\homeless_data\homeless_rates.csv"
-climate_file = r"C:\Users\mhyles\Downloads\2024 Projects\homelessness\climate_data\combined_climate_data_2010_2022.csv"
-political_file = r"C:\Users\mhyles\Downloads\2024 Projects\homelessness\political_files\political_indices.csv"
+homeless_file = r"C:\Users\mhyles\Downloads\2024 Projects\NEREUS\homeless_data\homeless_rates.csv"
+climate_file = r"C:\Users\mhyles\Downloads\2024 Projects\NEREUS\climate_data\combined_climate_data_2010_2022.csv"
+political_file = r"C:\Users\mhyles\Downloads\2024 Projects\NEREUS\political_files\political_indices.csv"
 
-def load_and_prepare_data():
-    # Read data
-    homeless_df = pd.read_csv(homeless_file)
-    climate_df = pd.read_csv(climate_file)
-    political_df = pd.read_csv(political_file)
-    
-    # Convert homeless data to long format
-    homeless_long = homeless_df.melt(
-        id_vars=['State'], 
-        var_name='Year', 
-        value_name='Homeless_Rate'
-    )
-    homeless_long['Year'] = homeless_long['Year'].astype(int)
-    
-    # Prepare climate data
-    climate_panel = climate_df[['Name', 'Year', 'Value']].copy()
-    climate_panel.columns = ['State', 'Year', 'Temperature']
-    
-    # Standardize state names
-    homeless_long['State'] = homeless_long['State'].str.upper()
-    climate_panel['State'] = climate_panel['State'].str.upper()
-    
-    # Merge datasets
-    merged_df = pd.merge(homeless_long, political_df, on=['State', 'Year'])
-    merged_df = pd.merge(merged_df, climate_panel, on=['State', 'Year'])
-    
-    return merged_df
+# State abbreviation mapping
+state_abbrev = {
+    'ALABAMA': 'AL', 'ALASKA': 'AK', 'ARIZONA': 'AZ', 'ARKANSAS': 'AR',
+    'CALIFORNIA': 'CA', 'COLORADO': 'CO', 'CONNECTICUT': 'CT', 'DELAWARE': 'DE',
+    'FLORIDA': 'FL', 'GEORGIA': 'GA', 'HAWAII': 'HI', 'IDAHO': 'ID',
+    'ILLINOIS': 'IL', 'INDIANA': 'IN', 'IOWA': 'IA', 'KANSAS': 'KS',
+    'KENTUCKY': 'KY', 'LOUISIANA': 'LA', 'MAINE': 'ME', 'MARYLAND': 'MD',
+    'MASSACHUSETTS': 'MA', 'MICHIGAN': 'MI', 'MINNESOTA': 'MN', 'MISSISSIPPI': 'MS',
+    'MISSOURI': 'MO', 'MONTANA': 'MT', 'NEBRASKA': 'NE', 'NEVADA': 'NV',
+    'NEW HAMPSHIRE': 'NH', 'NEW JERSEY': 'NJ', 'NEW MEXICO': 'NM', 'NEW YORK': 'NY',
+    'NORTH CAROLINA': 'NC', 'NORTH DAKOTA': 'ND', 'OHIO': 'OH', 'OKLAHOMA': 'OK',
+    'OREGON': 'OR', 'PENNSYLVANIA': 'PA', 'RHODE ISLAND': 'RI', 'SOUTH CAROLINA': 'SC',
+    'SOUTH DAKOTA': 'SD', 'TENNESSEE': 'TN', 'TEXAS': 'TX', 'UTAH': 'UT',
+    'VERMONT': 'VT', 'VIRGINIA': 'VA', 'WASHINGTON': 'WA', 'WEST VIRGINIA': 'WV',
+    'WISCONSIN': 'WI', 'WYOMING': 'WY', 'DISTRICT OF COLUMBIA': 'DC'
+}
 
-def analyze_time_series(df):
-    """Perform comprehensive time series analysis"""
+def analyze_state_trends(homeless_df):
+    """Analyze trends for each state"""
+    state_trends = {}
+    years = [str(year) for year in range(2010, 2023)]
     
-    # 1. Overall Trends
-    yearly_stats = df.groupby('Year').agg({
-        'Homeless_Rate': ['mean', 'std', 'min', 'max'],
-        'Political_Index': 'mean',
-        'Temperature': 'mean'
+    for _, row in homeless_df.iterrows():
+        state = row['State']
+        values = row[years].astype(float).values
+        
+        # Calculate trend using linear regression
+        X = np.arange(len(values)).reshape(-1, 1)
+        y = values.reshape(-1, 1)
+        trend = np.polyfit(X.flatten(), y.flatten(), 1)[0]
+        
+        state_trends[state] = {
+            'trend': trend,
+            'mean': np.mean(values),
+            'std': np.std(values),
+            'min': np.min(values),
+            'max': np.max(values)
+        }
+    
+    return pd.DataFrame.from_dict(state_trends, orient='index')
+
+def plot_state_trends(homeless_df, political_df, n_states=5):
+    """Plot trends for top and bottom n states"""
+    years = [str(year) for year in range(2010, 2023)]
+    
+    # Convert political state names to abbreviations
+    political_df['State'] = political_df['State'].map(state_abbrev)
+    
+    # Calculate average political index for each state
+    political_avg = political_df.groupby('State')['Political_Index'].mean()
+    
+    # Calculate overall changes
+    changes = pd.DataFrame({
+        'State': homeless_df['State'],
+        'Change': homeless_df[years].astype(float).apply(lambda x: x.iloc[-1] - x.iloc[0], axis=1)
     })
     
-    # 2. State-specific trends
-    state_trends = {}
-    for state in df['State'].unique():
-        state_data = df[df['State'] == state].sort_values('Year')
-        
-        # Perform decomposition
-        try:
-            decomposition = seasonal_decompose(
-                state_data['Homeless_Rate'], 
-                period=4,  # Adjust period based on your data
-                model='additive'
-            )
-            
-            state_trends[state] = {
-                'trend': decomposition.trend,
-                'seasonal': decomposition.seasonal,
-                'resid': decomposition.resid,
-                'mean_rate': state_data['Homeless_Rate'].mean(),
-                'trend_direction': np.polyfit(range(len(state_data)), 
-                                           state_data['Homeless_Rate'], 1)[0]
-            }
-        except:
-            print(f"Could not decompose series for {state}")
+    # Get top and bottom states
+    top_states = changes.nlargest(n_states, 'Change')['State']
+    bottom_states = changes.nsmallest(n_states, 'Change')['State']
     
-    return yearly_stats, state_trends
-
-def create_visualizations(df, yearly_stats, state_trends):
-    # 1. Overall Trends Plot
+    # Create plots
     plt.figure(figsize=(15, 10))
     
-    # Plot 1: National Trends
-    plt.subplot(2, 2, 1)
-    plt.plot(yearly_stats.index, yearly_stats[('Homeless_Rate', 'mean')], 'b-')
-    plt.fill_between(yearly_stats.index, 
-                     yearly_stats[('Homeless_Rate', 'min')],
-                     yearly_stats[('Homeless_Rate', 'max')],
-                     alpha=0.2)
-    plt.title('National Homelessness Trends')
-    plt.xlabel('Year')
-    plt.ylabel('Homeless Rate')
+    # Plot top increasing states
+    plt.subplot(2, 1, 1)
+    for state in top_states:
+        values = homeless_df[homeless_df['State'] == state][years].astype(float).iloc[0]
+        color = 'blue' if political_avg[state] > 50 else 'red'
+        plt.plot(years, values, marker='o', label=f"{state} ({political_avg[state]:.1f})", color=color)
+    plt.title('States with Largest Increase in Homelessness\nBlue = Democratic, Red = Republican')
+    plt.legend()
+    plt.xticks(rotation=45)
     
-    # Plot 2: State Variations
-    plt.subplot(2, 2, 2)
-    trend_directions = pd.Series({state: data['trend_direction'] 
-                                for state, data in state_trends.items()})
-    trend_directions.sort_values().plot(kind='bar')
-    plt.title('State-wise Trend Directions')
-    plt.xticks(rotation=90)
-    
-    # Plot 3: Political vs Homelessness
-    plt.subplot(2, 2, 3)
-    sns.scatterplot(data=df, x='Political_Index', y='Homeless_Rate', 
-                   hue='Year', alpha=0.6)
-    plt.title('Political Index vs Homelessness')
-    
-    # Plot 4: Temperature vs Homelessness
-    plt.subplot(2, 2, 4)
-    sns.scatterplot(data=df, x='Temperature', y='Homeless_Rate', 
-                   hue='Year', alpha=0.6)
-    plt.title('Temperature vs Homelessness')
+    # Plot top decreasing states
+    plt.subplot(2, 1, 2)
+    for state in bottom_states:
+        values = homeless_df[homeless_df['State'] == state][years].astype(float).iloc[0]
+        color = 'blue' if political_avg[state] > 50 else 'red'
+        plt.plot(years, values, marker='o', label=f"{state} ({political_avg[state]:.1f})", color=color)
+    plt.title('States with Largest Decrease in Homelessness\nBlue = Democratic, Red = Republican')
+    plt.legend()
+    plt.xticks(rotation=45)
     
     plt.tight_layout()
     plt.show()
 
-def analyze_state_clusters(df):
-    """Cluster states based on their homelessness patterns"""
-    from sklearn.cluster import KMeans
-    from sklearn.preprocessing import StandardScaler
-    
-    # Prepare features for clustering
-    features = ['Homeless_Rate', 'Political_Index', 'Temperature']
-    X = df[features]
-    
-    # Standardize features
-    scaler = StandardScaler()
-    X_scaled = scaler.fit_transform(X)
-    
-    # Perform clustering
-    kmeans = KMeans(n_clusters=4, random_state=42)
-    df['Cluster'] = kmeans.fit_predict(X_scaled)
-    
-    return df
-
 def main():
-    # Load and prepare data
-    df = load_and_prepare_data()
+    # Read data
+    homeless_df = pd.read_csv(homeless_file)
+    political_df = pd.read_csv(political_file)
     
-    # Perform time series analysis
-    yearly_stats, state_trends = analyze_time_series(df)
+    # Analyze trends
+    trend_analysis = analyze_state_trends(homeless_df)
+    
+    # Print analyses
+    print("\nTop 5 States with Increasing Homelessness Trends:")
+    print(trend_analysis.sort_values('trend', ascending=False).head())
+    
+    print("\nTop 5 States with Decreasing Homelessness Trends:")
+    print(trend_analysis.sort_values('trend', ascending=True).head())
+    
+    print("\nOverall Statistics:")
+    print(trend_analysis.describe())
     
     # Create visualizations
-    create_visualizations(df, yearly_stats, state_trends)
-    
-    # Perform clustering analysis
-    df_clustered = analyze_state_clusters(df)
-    
-    # Print summary statistics
-    print("\nYearly Statistics:")
-    print(yearly_stats)
-    
-    print("\nTop 5 States with Increasing Trends:")
-    trend_directions = pd.Series({state: data['trend_direction'] 
-                                for state, data in state_trends.items()})
-    print(trend_directions.nlargest(5))
-    
-    print("\nTop 5 States with Decreasing Trends:")
-    print(trend_directions.nsmallest(5))
-    
-    # Save results
-    output_path = r"C:\Users\mhyles\Downloads\2024 Projects\homelessness\time_series_analysis_results.csv"
-    yearly_stats.to_csv(output_path)
+    plot_state_trends(homeless_df, political_df)
 
 if __name__ == "__main__":
     main()
+'''
+This trend analysis shows the states with the largest increases in homelessness rates from 2010-2022. 
+1. Vermont (VT)
+Highest trend coefficient (11.77): Steepest increase in homelessness
+Mean: Average of 234.39 homeless per 100,000 people
+High variability (std: 81.01)
+Range: From 172.65 to 429.60 per 100,000
+
+2. New York (NY)
+Second highest trend (7.44)
+Highest mean rate (410.91)
+More stable rates (std: 48.83)
+Consistently high rates (325.37 to 473.39)
+
+3. Delaware (DE)
+Third steepest increase (5.46)
+Lower mean rate (120.30)
+High variability (std: 35.62)
+Wide range: 94.58 to 232.38
+
+4. California (CA)
+Moderate increase (2.29)
+High mean rate (325.03)
+Very high variability (std: 66.74)
+Extreme range: 146.81 to 439.34
+
+5. South Dakota (SD)
+Smallest increase among top 5 (2.13)
+Lower mean rate (114.45)
+More stable rates (std: 17.12)
+Range: 89.57 to 152.66
+
+Key Insights:
+These states show the strongest upward trends in homelessness
+Higher political index (more Democratic) states tend to show larger increases
+States with higher mean rates also tend to have higher variability
+The trends suggest growing challenges in these states despite different baseline rates
+'''
