@@ -30,7 +30,7 @@ def process_coc_data():
     return coc_df
 
 def calculate_cocs_per_population():
-    """Calculate CoCs per million population"""
+    """Calculate CoCs per 100,000 population"""
     # Read population data
     pop_df = pd.read_csv(pop_file)
     
@@ -52,15 +52,15 @@ def calculate_cocs_per_population():
                 # Get population for this state and year
                 population = pop_df.loc[pop_df['State'] == state, str(year)].iloc[0]
                 
-                # Calculate CoCs per million
-                cocs_per_million = (cocs * 1000000) / population
+                # Calculate CoCs per 100,000
+                cocs_per_hundredthousands = (cocs * 100000) / population
                 
                 results.append({
                     'State': state,
                     'Year': year,
                     'CoCs': cocs,
                     'Population': population,
-                    'CoCs_per_million': cocs_per_million
+                    'CoCs_per_hundredthousands': cocs_per_hundredthousands
                 })
             except Exception as e:
                 print(f"Error calculating rate for {state} in {year}: {str(e)}")
@@ -75,20 +75,20 @@ def main():
     results_df.to_csv(output_file, index=False)
     
     # Print summary statistics
-    print("\nCoCs per Million Population Summary:")
-    print(results_df.groupby('Year')['CoCs_per_million'].describe())
+    print("\nCoCs per 100,000 Population Summary:")
+    print(results_df.groupby('Year')['CoCs_per_hundredthousands'].describe())
     
-    print("\nStates with Highest Average CoCs per Million:")
-    state_avg = results_df.groupby('State')['CoCs_per_million'].mean().sort_values(ascending=False)
+    print("\nStates with Highest Average CoCs per 100,000:")
+    state_avg = results_df.groupby('State')['CoCs_per_hundredthousands'].mean().sort_values(ascending=False)
     print(state_avg.head())
     
-    print("\nStates with Lowest Average CoCs per Million:")
+    print("\nStates with Lowest Average CoCs per 100,000:")
     print(state_avg.tail())
     
     # Create wide format for time series analysis
     wide_df = results_df.pivot(index='State', 
                               columns='Year', 
-                              values='CoCs_per_million')
+                              values='CoCs_per_hundredthousands')
     wide_df.to_csv(output_file.replace('.csv', '_wide.csv'))
 
 if __name__ == "__main__":

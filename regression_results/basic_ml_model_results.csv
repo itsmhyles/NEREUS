@@ -1,0 +1,13 @@
+,R2,RMSE,Feature_Importance
+Random Forest,0.7053288274306311,54.38083542932233,"                     feature  importance
+1            Political_Index    0.453005
+0                Temperature    0.286877
+2  CoCs_per_hundredthousands    0.260118"
+Gradient Boosting,0.6528484979548026,59.02507857535469,"                     feature  importance
+1            Political_Index    0.484842
+0                Temperature    0.289391
+2  CoCs_per_hundredthousands    0.225767"
+XGBoost,0.6672019600772332,57.79196076184685,"                     feature  importance
+1            Political_Index    0.576460
+2  CoCs_per_hundredthousands    0.230881
+0                Temperature    0.192659"
